@@ -1,0 +1,89 @@
+body {
+font-family: 'lato';
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04773b;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: #04773b;
+    text-align: center;
+    padding: 0;
+    margin: 0 4px;
+}
+
+.nav li{
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8 em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+    margin: 0 4px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: #069e2d;
+}
+
+.nav a.active {
+    background-color: #508ca4;
+    color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.2em;
+    }
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
+#myVideo {
+   position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
